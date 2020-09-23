@@ -1,3 +1,5 @@
+package yoshikit1996
+
 import cats.effect.{ExitCode, IO, IOApp}
 
 object EntryPoint extends IOApp {

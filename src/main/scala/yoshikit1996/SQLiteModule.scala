@@ -1,3 +1,5 @@
+package yoshikit1996
+
 import cats.effect.{ContextShift, IO}
 import doobie.util.transactor.Transactor
 

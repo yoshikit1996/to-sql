@@ -1,3 +1,5 @@
+package yoshikit1996
+
 import cats.effect.Bracket
 import doobie.implicits._
 import doobie.util.transactor.Transactor
