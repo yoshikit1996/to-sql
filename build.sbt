@@ -8,5 +8,10 @@ libraryDependencies ++= Seq(
   "org.typelevel" %% "cats-core" % "2.0.0",
   "org.tpolecat" %% "doobie-core" % "0.9.0",
   "org.tpolecat" %% "doobie-specs2" % "0.9.0",
-  "org.xerial" % "sqlite-jdbc" % "3.32.3.2"
+  "io.circe" %% "circe-core" % "0.12.3",
+  "io.circe" %% "circe-generic" % "0.12.3",
+  "io.circe" %% "circe-parser" % "0.12.3",
+  "org.xerial" % "sqlite-jdbc" % "3.32.3.2",
+  "ch.qos.logback" % "logback-classic" % "1.2.3",
+  "com.typesafe.scala-logging" %% "scala-logging" % "3.9.2"
 )
