@@ -7,7 +7,7 @@ import tosqlite.domain.model.SqliteSchema
 
 class ToSqliteService[F[_]: Monad](dao: Dao[F], sqliteRowFactory: SqliteRowRepository) extends StrictLogging {
   def convertToSql(pathToJson: String): F[Unit] = {
-    val rows = sqliteRowFactory.fromJsonFile("sample.json") match {
+    val rows = sqliteRowFactory.fromJsonFile(pathToJson) match {
       case Right(rs) =>
         rs
       case Left(e) =>
