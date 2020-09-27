@@ -3,7 +3,7 @@ package tosqlite.infrastructure
 import io.circe.parser.decode
 import io.circe.{Decoder, DecodingFailure, Error}
 import tosqlite.application.SqliteRowRepository
-import tosqlite.domain.model.{SqliteRow, SqliteType, SqliteValue}
+import tosqlite.domain.model.{SqliteReservedWords, SqliteRow, SqliteType, SqliteValue}
 
 import scala.util.{Failure, Success, Try}
 
@@ -36,7 +36,7 @@ class SqliteRowRepositoryImpl extends SqliteRowRepository {
     val values = map.map {
       case (key, value) =>
         SqliteValue(
-          columnName = key,
+          columnName = SqliteReservedWords.addSuffixIfWordIsReserved(key),
           value = value,
           sqliteType = detectType(value)
         )
