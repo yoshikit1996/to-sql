@@ -1,4 +1,4 @@
-package yoshikit1996.domain.model
+package tosqlite.domain.model
 
 abstract sealed class SqliteType(value: String) {
   override def toString: String = value

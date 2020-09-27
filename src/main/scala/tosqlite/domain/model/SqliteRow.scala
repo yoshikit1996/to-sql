@@ -1,4 +1,4 @@
-package yoshikit1996.domain.model
+package tosqlite.domain.model
 
 case class SqliteRow(values: Seq[SqliteValue]) {
   def toInsertStatement(tableName: String): String =

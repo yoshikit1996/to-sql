@@ -1,7 +1,7 @@
-package yoshikit1996.application
+package tosqlite.application
 
 import io.circe.Error
-import yoshikit1996.domain.model.SqliteRow
+import tosqlite.domain.model.SqliteRow
 
 trait SqliteRowRepository {
   def fromJsonFile(path: String): Either[Error, Seq[SqliteRow]]

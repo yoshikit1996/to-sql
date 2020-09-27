@@ -1,4 +1,4 @@
-package yoshikit1996.domain.model
+package tosqlite.domain.model
 
 /**
  * カラム名と型のマップを保持するクラス

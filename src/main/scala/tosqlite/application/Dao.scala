@@ -1,6 +1,6 @@
-package yoshikit1996.application
+package tosqlite.application
 
-import yoshikit1996.domain.model.{SqliteRow, SqliteSchema}
+import tosqlite.domain.model.{SqliteRow, SqliteSchema}
 
 trait Dao[F[_]] {
   def createTable(schema: SqliteSchema): F[Unit]

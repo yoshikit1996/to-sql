@@ -1,4 +1,4 @@
-package yoshikit1996.infrastructure
+package tosqlite.infrastructure
 
 import cats.Monad
 import cats.effect.{Bracket, Effect}
@@ -6,8 +6,8 @@ import cats.implicits._
 import doobie.implicits._
 import doobie.util.fragment.Fragment
 import doobie.util.transactor.Transactor
-import yoshikit1996.application.Dao
-import yoshikit1996.domain.model.{SqliteRow, SqliteSchema}
+import tosqlite.application.Dao
+import tosqlite.domain.model.{SqliteRow, SqliteSchema}
 
 class DaoImpl[F[_]: Monad: Effect](transactor: Transactor[F])(implicit bracket: Bracket[F, Throwable]) extends Dao[F] {
 

@@ -1,9 +1,9 @@
-package yoshikit1996.infrastructure
+package tosqlite.infrastructure
 
 import io.circe.parser.decode
 import io.circe.{Decoder, DecodingFailure, Error}
-import yoshikit1996.application.SqliteRowRepository
-import yoshikit1996.domain.model.{SqliteRow, SqliteType, SqliteValue}
+import tosqlite.application.SqliteRowRepository
+import tosqlite.domain.model.{SqliteRow, SqliteType, SqliteValue}
 
 import scala.util.{Failure, Success, Try}
 

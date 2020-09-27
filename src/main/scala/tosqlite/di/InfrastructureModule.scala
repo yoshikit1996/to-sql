@@ -1,9 +1,9 @@
-package yoshikit1996.di
+package tosqlite.di
 
 import cats.effect.{Async, ConcurrentEffect, ContextShift}
 import doobie.util.transactor.Transactor
 import doobie.util.transactor.Transactor.Aux
-import yoshikit1996.infrastructure.DaoImpl
+import tosqlite.infrastructure.DaoImpl
 
 class InfrastructureModule[F[_]: ContextShift: ConcurrentEffect]() {
   val dao = new DaoImpl[F](transactor[F])

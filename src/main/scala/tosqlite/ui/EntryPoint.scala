@@ -1,8 +1,8 @@
-package yoshikit1996.ui
+package tosqlite.ui
 
 import cats.effect.{ExitCode, IO, IOApp}
 import com.typesafe.scalalogging.StrictLogging
-import yoshikit1996.di.{ApplicationModule, InfrastructureModule}
+import tosqlite.di.{ApplicationModule, InfrastructureModule}
 
 object EntryPoint extends IOApp with StrictLogging {
   override def run(args: List[String]): IO[ExitCode] = {

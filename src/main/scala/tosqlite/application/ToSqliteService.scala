@@ -1,9 +1,9 @@
-package yoshikit1996.application
+package tosqlite.application
 
 import cats.Monad
 import cats.implicits._
 import com.typesafe.scalalogging.StrictLogging
-import yoshikit1996.domain.model.SqliteSchema
+import tosqlite.domain.model.SqliteSchema
 
 class ToSqliteService[F[_]: Monad](dao: Dao[F], sqliteRowFactory: SqliteRowRepository) extends StrictLogging {
   def convertToSql(pathToJson: String): F[Unit] = {

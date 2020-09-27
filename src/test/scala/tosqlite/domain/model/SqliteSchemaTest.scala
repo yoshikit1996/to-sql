@@ -1,4 +1,4 @@
-package yoshikit1996.domain.model
+package tosqlite.domain.model
 
 import org.specs2.mutable.Specification
 
