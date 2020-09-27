@@ -16,3 +16,5 @@ libraryDependencies ++= Seq(
   "com.typesafe.scala-logging" %% "scala-logging" % "3.9.2",
   "org.rogach" %% "scallop" % "3.5.1"
 )
+
+enablePlugins(JavaAppPackaging)
