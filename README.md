@@ -1,5 +1,20 @@
 # to-sqlite
 
+## デモ
+
+```
+$ cat sample.json
+{"stringValue": "aaa", "intValue": 1}
+{"stringValue": "bbb", "intValue": 2}%
+$ to-sqlite --input=sample.json --output=sample.db 
+$ sqlite3 sample.db
+SQLite version 3.28.0 2019-04-15 14:49:49
+Enter ".help" for usage hints.
+sqlite> select * from main;
+aaa|1.0
+bbb|2.0
+```
+
 ## アーキテクチャ
 
 3層 + ドメインモデル:
